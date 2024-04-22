@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: white;
+    border: 2px solid #0a4689;
+    display: flex;
+    color: #0a4689;
+    padding-left: 10vw;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.menu{
+    display: flex;
+}
+
+.btn{
+    border: 2px solid #0a4689;
+    color: #0a4689;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.8s;
+}
+
+    
+
+.Button :hover{
+    background-color:#0a4689;
+    color: white;
+}
+.Headersub{
+    padding-top: 40px;
+    margin-left: 30vw;
+}
+
+/* body */
+
+.main {
+    
+    margin-left: 5vh;
+    margin-right: 5vh;
+    height: 420vh;
+    
+    
+}
+
+.heading {
+    margin-top: 15vh;
+    background-color:#0a4689;
+    font-size: 40px;
+   padding: 50px;
+    height: 40vh;
+    text-align: center;
+    color: white;
+}
+
+.subhead {
+    font-size: 20px;
+    text-align: center;
+}
+
+.bgdiv1 {
+    background-color: #0a4689;
+}
+
+.divbg2 {
+    background-color: #0a4689;
+}
+
+.div1 {
+    /* background-color: aqua; */
+    margin-top: 3rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.div2 {
+    background-color: #e5f2f9;
+    margin-top: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 80vh;
+
+    color: black;
+    
+    height: 80vh;
+}
+
+#subdiv1 {
+    display: flex;
+    padding: 30px;
+}
+
+#subdiv2 {
+    padding: 30px;
+    margin-top: -60px;
+}
+
+#test {
+    margin-top: 5%;
+}
+
+#title1 {
+    margin-left: 46%;
+    padding-top: 4%;
+}
+
+
+.div3 {
+    background-color: #e5f2f9;
+    margin-top: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 80vh;
+}
+
+#title2 {
+    margin-left: 38%;
+    padding-top: 4%;
+    margin-bottom: 2%;
+}
+
+.div3sub1 {
+    margin-top: 4%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+
+
+
+.div3sub2 {
+    margin-top: 4%;
+}
+
+#list {
+    display: flex;
+}
+
+#Bloodimg {
+    margin-top: -30px;
+    margin-right: -20px;
+}
+
+.caption1 {
+    margin-left: 33%;
+}
+
+.div3ul {
+    margin-left: 4%;
+
+}
+
+
+.div4 {
+
+    background-color: #e5f2f9;
+    margin-top: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 100vh;
+    padding: 60px;
+    padding-top: 30px;
+}
+
+
+
+#title3 {
+  
+    /* padding-top: 4%; */
+    margin-bottom: 2%;
+}
+
+.Clickmecontainer {
+    display: flex;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+.Clickme {
+
+    background-color: azure;
+    height: 150px;
+    width: 150px;
+    margin-left: 45px;
+    transition: 0.3s;
+
+    border-radius: 50%;
+
+}
+
+.clickmeimg {
+    position: relative;
+    left: 25%;
+    top: 25%;
+}
+
+.icontext {
+    position: relative;
+    bottom: -25%;
+
+    text-align: center;
+}
+
+.Clickme:hover {
+    background-color: #0a4689;
+    color: white;
+}
+
+.Clickme :hover .Clickmeinfo {
+    margin-top: 30px;
+    margin-left: 10%;
+    background-color: azure;
+    height: 400px;
+    width: 1000px;
+
+
+}
+
+.Clickmeinfo {
+    margin-top: 30px;
+    margin-left: 5%;
+    background-color: azure;
+    height: 400px;
+    width: 1000px;
+
+
+}
+
+.div5 {
+
+    background-color: #e5f2f9;
+    margin-top: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 80vh;
+
+}
+.div5sub1{
+    margin-top: 4%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+}
+
+.div5sub2{
+    margin-top: 60px;
+}
+
+#transimg{
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+#title4 {
+
+    margin-left: 42%;
+    padding-top: 4%;
+    margin-bottom: 2%;
+}
+
+/* Footer */
+.Footer{
+    color: aliceblue;
+    /* margin-top:150px; */
+    background-color: rgb(244, 56, 56);
+    height: 200px;
+   display: flex;
+   background-image: linear-gradient(#1164c3,#0a4689);
+}
+li{margin-bottom: 10px;}
+.footerLogo{ margin-top: 20px;}
+#copyright{margin-left: 45px;color: aliceblue; width: 200px; margin-top: 10px;}
+.column1{ width:25%; margin-left: 20px;}
+.column2{margin-top: 30px;width:25%; margin-left: 200px;}
+.column3{margin-top: 30px;width:25%;}
+.column4{margin-top: 30px;width:25%;}
+.text{font-size: 10px;}
+.Footrlinks{padding: 3px;  text-decoration: none; color: aliceblue;}

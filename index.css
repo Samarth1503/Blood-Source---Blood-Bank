@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.header {
+    background-color: rgb(246, 200, 200);
+    display: flex;
+    padding: 6px 24px;
+    height: 100px;
+    display: -webkit-box;
+    border-bottom: 3px solid gray;
+    
+   
+}
+.logo{
+    margin-right: 50px;
+}
+
+
+.menu {
+    display: flex;
+    position: relative;
+    right: 0;
+    
+}
+
+.header-subdiv{
+  margin-top: 2%;
+  margin-left: 41%; 
+    
+}
+.list {
+    display: flex;
+}
+
+/* .Button a {
+    color: black;
+    padding: 6px;
+    border: 2px solid black;
+} */
+/* li{border: 2px solid black;
+     padding: 3px; 
+     gap: 4rem;
+    color: black;} */
+.Button a{text-decoration: none;}
+
+
+.b1{ padding: 8px;
+    margin: 10px;
+    color: black;
+    margin-left: 20px;
+border: 2px
+solid black;
+border-radius: 10px;
+transition: 0.3s;
+
+}
+
+
+.b1:hover{
+    background-color: rgb(236, 58, 58);
+    color: aliceblue;
+}
+
+.body{background-image: url("plasma-graphic.jpg");
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-size: 100%;}

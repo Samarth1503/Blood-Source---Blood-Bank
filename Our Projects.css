@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: yu gothic;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    border-bottom: 2px solid black;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding-left: 10vh;
+    color: #0a4689;
+    top: 0%;
+    
+    
+}
+
+
+.menu-cnt {
+    padding-left: 450px;
+    padding-top: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-item {
+    color: #0a4689;
+    border: 2px solid #0a4689;
+    padding: 7px 20px 7px 20px;
+}
+
+.menu-item:hover {
+    background-color: #0a4689;
+    color: aliceblue;
+}
+
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+    margin-left: 450px;
+}
+
+.menu-item {
+    border: 2px solid #0a4689;
+    margin: 10px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #0a4689;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navbar a:hover,
+.dropdown:hover .dropbtn:focus {
+    background-color: #0a4689;
+}
+
+.dropdown-content {
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-top: 3px solid #9b0e1792;
+    margin-top: 8px;
+    transition: ease-in-out;
+}
+
+.dropdown-content:focus-within {
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #0a4689;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #0a4689;
+    color: aliceblue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* body */
+body{
+    background-color: #0a4689;
+}
+main{
+    flex-grow: 1;
+    margin-top: 15vh;
+    height: 100vh;
+    padding: 20px;
+    
+}
+
+main > article{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 70% 30%;
+}
+
+main > article > .artical-section{
+    height: 100%;
+    border: 1px solid white;
+}
+
+main > article > .article-description-section,
+main > article > .article-nav-section{
+    border-left : 1px solid white;
+}
+
+main > article > .article-title-section{
+    border-top:1px solid white;
+}
+
+
+main >article > .artical-image-section{
+    background-image: url("blood drive.png");
+    background-position: center center;
+    
+}
+
+main >article > .artical-title-section p{
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+main > article > .artical-description-section{
+    color: white;
+    
+}
+main > article > .artical-description-section p,ol{
+    padding: 20px;
+    
+}
+
+main > article > .artical-nav-section{
+    display: flex;
+}
+
+main > article > .artical-nav-section >div{
+    background-color: #0a4689;
+   width: 50%;
+   padding-top: 10px;
+   padding-left: 40px;
+}
+ main > article > .artical-nav-section > button{
+    background-color: #0a4689;
+    border: none;
+ }

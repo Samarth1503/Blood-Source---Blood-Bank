@@ -1,0 +1,28 @@
+body{font-family: helvetica; font-size: medium; }
+.div1{/*border: dashed red;*/ display:flex; width: 100%; background-color: bisque;}
+.img1{/*border: dashed red; */width: 300px; float: right; top: 0%;} 
+.p1{ /*border:  dashed red;*/ padding-top: 30px;}
+.title1 { height: 100%; width: 100%; font-size: 50px; /*border: dashed red 
+    ;*/ background-color: rgb(174, 50, 47); margin: 0%;}
+
+.div2{/*border: dashed red;*/ display:flex; width: 100%;}
+.img2{/*border: dashed red; */width: 300px; float: left; top: 0%; padding-right: 20px;} 
+.p2{ /*border:  dashed red;*/ padding-top: 30px;}
+.title2 { height: 100%; width: 20%;  /*border: dashed red
+;*/}
+
+
+.div3{/*border: dashed red;*/ display:flex; width: 100%;}
+.img3{/*border: dashed red; */width: 300px; float: right; top: 0%; padding-right: 20px;} 
+.p3{ /*border:  dashed red;*/ padding-top: 30px;}
+.title3 { height: 100%; width: 20%;  /*border: dashed red
+;*/}
+
+
+.headimg{ text-align: center;}
+.headimgtext{ position: absolute;
+    top: 5%;
+    left: 13%;
+    color: white;
+    font-size: 35px;
+    }

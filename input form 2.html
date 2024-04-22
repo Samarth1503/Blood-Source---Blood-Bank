@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blood Bank Project</title>
+  <style>
+    h2
+    {
+      position: relative;
+      margin-top:2vh;
+      margin-left: 2vw;
+      margin-bottom: 1vh;
+    }
+    body{font-family: calibri;}
+    .container 
+    {
+      border-radius: 5px;
+      background-color: #dbd8d8;
+      padding: 20px;
+      margin-left: 25vw;
+      margin-right: 25vw;
+    }
+
+    input[type=text], textarea, address {
+      width: 30vw;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    input[type=date]
+    {
+      width: 30vw;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+   input[type=email]
+    {
+     width: 30vw;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     resize: vertical;
+    }
+   input[type=number]
+    {
+      width: 30vw;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+   input[type=submit] 
+    {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: left;
+      /* position: relative;
+      margin-left: 1vw; */
+    }
+  input[type=submit]:hover 
+    {
+      background-color: #45a049;
+    }
+    input[type=reset] 
+    {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: left;
+      position: relative;
+      margin-left: 1vw;
+    }
+  input[type=reset]:hover 
+    {
+      background-color: #45a049;
+    }
+
+  </style>
+  </head>
+  <body>
+    <h2>
+      Donation Form
+    </h2>
+    <div class="container">
+        <form action="homepage.html" target="_self">
+            Full Name : <br>
+              <input type="text" autocomplete required placeholder="Enter your full name"><br><br> 
+            E-mail: <br>
+              <input type="email" name="email" required placeholder="Enter your E-mail id"><br><br> 
+            Date of Birth: <br>
+              <input type="date" name="bday" required ><br><br> 
+            Age { between 18yrs-65yrs old }: <br>
+              <input type="number" min="18" max="65"><br><br> 
+            Mobile no: <br>
+              <input type="text" name="m_no" required placeholder="Enter your mobile no."><br><br> 
+            Gender: <br>
+              <input type="radio" name="Set-1" value="Male" required> Male 
+              <input type="radio" name="Set-1" value="Female"> Female 
+              <input type="radio" name="Set-1" value="Other"> Other <br><br>
+            Address: <br>
+              <textarea name="address" required placeholder="Enter your address" style="height:13vh"></textarea><br>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear"><br><br><br> 
+        </form>
+    </div>
+      
+  </body>
+  </html>  

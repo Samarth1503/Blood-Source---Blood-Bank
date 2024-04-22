@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <style> 
+    
+    * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        .header {
+            background-color: white;
+            display: flex;
+            border-bottom: 2px solid black;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            padding-left: 10vh;
+            color: #0a4689;
+            top: 0%;
+        }
+        .btn{
+            border: 2px solid #0a4689;
+            color: #0a4689;
+            background-color: white;
+            padding: 5px 10px;
+            font-size: 16px;
+            text-decoration: none;
+            margin: 10px;
+            transition: 0.8s;
+        }
+        
+        .Button :hover{
+            background-color:#0a4689;
+            color: white;
+        }
+
+        .menu-cnt {
+            padding-left: 350px;
+            padding-top: 50px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .menu-item {
+            color: #0a4689;
+            border: 2px solid #0a4689;
+            padding: 7px 20px 7px 20px;
+        }
+
+        .menu-item:hover {
+            background-color: #0a4689;
+            color: aliceblue;
+        }
+
+        .navbar {
+            overflow: hidden;
+            font-family: Arial;
+            margin-left: 450px;
+        }
+
+        .menu-item {
+            border: 2px solid #0a4689;
+            margin: 10px;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: #0a4689;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn:focus {
+            background-color: #0a4689;
+        }
+
+        .dropdown-content {
+            padding-top: 10px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-top: 3px solid #9b0e1792;
+            margin-top: 8px;
+            transition: ease-in-out;
+        }
+
+        .dropdown-content:focus-within {
+            cursor: pointer;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: #0a4689;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #0a4689;
+            color: aliceblue;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="Logo">
+            <img src="/Logo2-removebg-preview.png" alt="logo" height="100px" width="200px">
+        </div>
+        <div class="menu-cnt">
+            <ul class="menu">
+                <li><a class="menu-item" href="#home">Home</a></li>
+                <li><a class="menu-item" href="#">Donate</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="menu-item">Blood</a>
+                        <div class="dropdown-content">
+                            <a href="blood3.html">Blood Components</a>
+                            <a href="Blood Process.html">Donation Proces</a>
+                            <a href="After donation.html">After Donation</a>
+                        </div>
+                    </div>
+                </li>
+                
+                    <div class="dropdown">
+                        <a class="menu-item">About Us</a>
+                        <div class="dropdown-content">
+                    <a href="about us.html">About Us</a>
+                    <a href="Our History.html">Our History</a>
+                    <a href="Our Projects.html">Our Projects</a>
+                    </div> </div>
+                </li>
+                
+                <nav class="main-nav">
+                <li><a href="#" class="menu-item">Login</a></li><br>
+            <li><a href="#" class="menu-item">Register</a></li>
+            </nav>
+            
+
+            <div class="user-modal">
+                <div class="user-modal-container">
+                  <ul class="switcher">
+                    <li><a href="#0">Sign in</a></li>
+                    <li><a href="#0">New account</a></li>
+                  </ul>
+            
+                  <div id="login">
+                    <form class="form">
+                      <p class="fieldset">
+                        <label class="image-replace email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="error-message">An account with this email address does not exist!</span>
+                      </p>
+            
+                      <p class="fieldset">
+                        <label class="image-replace password" for="signin-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+                        <a href="#0" class="hide-password">Show</a>
+                        <span class="error-message">Wrong password! Try again.</span>
+                      </p>
+            
+                      <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me">Remember me</label>
+                      </p>
+            
+                      <p class="fieldset">
+                        <input class="full-width" type="submit" value="Login">
+                      </p>
+                    </form>
+                    
+                    <p class="form-bottom-message"><a href="#0">Forgot your password?</a></p>
+                    <!-- <a href="#0" class="close-form">Close</a> -->
+                  </div>
+            
+                  <div id="signup">
+                    <form class="form">
+                      <p class="fieldset">
+                        <label class="image-replace username" for="signup-username">Username</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                        <span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
+                      </p>
+            
+                      <p class="fieldset">
+                        <label class="image-replace email" for="signup-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                        <span class="error-message">Enter a valid email address!</span>
+                      </p>
+            
+                      <p class="fieldset">
+                        <label class="image-replace password" for="signup-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
+                        <a href="#0" class="hide-password">Show</a>
+                        <span class="error-message">Your password has to be at least 6 characters long!</span>
+                      </p>
+            
+                      <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms">I agree to the <a class="accept-terms" href="Terms.html">Terms</a></label>
+                      </p>
+            
+                      <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Create account">
+                      </p>
+                    </form>
+            
+                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                  </div>
+            
+                  <div id="reset-password">
+                    <p class="form-message">Lost your password? Please enter your email address.</br> You will receive a link to create a new password.</p>
+            
+                    <form class="form">
+                      <p class="fieldset">
+                        <label class="image-replace email" for="reset-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                        <span class="error-message">An account with this email does not exist!</span>
+                      </p>
+            
+                      <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Reset password">
+                      </p>
+                    </form>
+            
+                    <p class="form-bottom-message"><a href="#0">Back to log-in</a></p>
+                  </div>
+                  <a href="#0" class="close-form">Close</a>
+                </div>
+              </div>
+            <!-- partial -->
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+              <script  src="loginscript.js"></script>
+            
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique dignissimos maiores
+        illum,
+        ducimus consectetur dolores sequi veniam iste ullam animi delectus architecto illo quis corporis ratione
+        officiis magni quaerat, perferendis assumenda id ex? Sapiente, ullam dolorum ipsum ducimus temporibus
+        consectetur impedit iure nesciunt similique quo eos saepe, a, dolores fuga odit quibusdam aperiam laboriosam
+        asperiores voluptas aut tenetur totam? Minima quae eligendi rem, ad molestias ut. Suscipit earum impedit
+        enim, cupiditate corporis in optio. Nostrum veritatis dolore ducimus sequi quaerat quis nihil suscipit
+        maxime dolor impedit voluptatum eaque facere neque voluptate tempora, ut incidunt numquam perferendis vero
+        iusto aliquam minima! Id dolorum odio perspiciatis et reprehenderit debitis voluptatum ipsa sequi excepturi
+        error, impedit rerum earum nisi tenetur ipsum recusandae velit. Dolorem neque fuga voluptatum laborum.
+        Quibusdam nostrum enim necessitatibus cumque saepe. Est explicabo illum sequi totam quibusdam sit mollitia
+        atque, sunt commodi tempore distinctio eaque nisi modi dolorem ratione ipsa placeat molestiae exercitationem
+        veniam deserunt qui nesciunt. Voluptatem laudantium nisi quam deleniti, voluptas sint, officia fuga
+        consectetur praesentium omnis minus, adipisci consequuntur aperiam quo reiciendis distinctio tenetur natus
+        pariatur. Repudiandae sed hic accusantium delectus iste numquam cupiditate similique tempora quae dolor
+        eveniet ducimus harum culpa magni earum mollitia in repellat, voluptatibus nisi quidem, nihil nobis dolores.
+        Quaerat laboriosam unde inventore a odio ratione distinctio dolor porro repudiandae corporis et quia,
+        voluptate laborum nulla recusandae voluptates excepturi optio iusto quidem fugit molestiae? Ipsam
+        voluptatibus nemo praesentium sed. Magnam adipisci delectus eum eius? Eius porro quo natus libero, pariatur
+        quaerat dolore ratione, hic doloribus ab, beatae debitis doloremque culpa perspiciatis omnis quia obcaecati?
+        Ipsum aliquid sit tempora nam fugiat eos exercitationem quo eveniet placeat, accusantium quaerat enim
+        voluptates, eius distinctio. Iure, distinctio. Aliquid odio id, dolore enim at dolorum sit. Cum culpa nihil
+        delectus quasi, laboriosam, quod illo aspernatur nulla error aliquam necessitatibus vel earum magnam
+        blanditiis quis numquam sint laudantium! Mollitia in optio repellat, esse delectus nostrum eveniet
+        architecto, tempore porro modi id aut accusantium vel? Minus asperiores unde sed mollitia, voluptates
+        suscipit impedit natus, ducimus excepturi vitae pariatur? Earum hic numquam delectus voluptas et facilis,
+        amet corporis quas totam sit sunt ut veritatis distinctio quisquam incidunt excepturi nisi deleniti,
+        mollitia perferendis! Illo tempore asperiores, praesentium ea nam quas veniam molestias ipsum temporibus
+        quidem architecto eligendi voluptates iure dolorum cupiditate culpa repellat. Et at similique eveniet
+        beatae! Repudiandae eum illum consectetur. Ipsa excepturi laboriosam voluptate laudantium eaque aperiam,
+        quod quos temporibus itaque quaerat cumque odio minus hic nobis? Doloremque, labore odio provident
+        accusantium, est vel error facilis tempore, quaerat ipsa distinctio veniam possimus. Deleniti incidunt
+        delectus facilis repellendus hic nemo assumenda temporibus, harum sunt quibusdam doloribus! In illo ipsum
+        error natus, nobis architecto repudiandae dolores omnis, velit quidem nostrum dolor? Sunt, nemo porro
+        expedita provident soluta autem quaerat impedit voluptate repellat exercitationem, culpa, iure ducimus quam
+        non? Nihil ullam praesentium rem delectus provident fugiat fuga perferendis perspiciatis? Adipisci aut
+        ratione a. Vel minima explicabo impedit eaque quos laudantium ea libero, aperiam iusto modi asperiores error
+        rem dicta debitis aliquam odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, doloribus!
+        Reprehenderit excepturi amet perspiciatis eos unde iure illum eius voluptate cumque. Praesentium voluptate
+        minus, error maiores accusamus, numquam est assumenda voluptates sint consequuntur molestias corporis autem,
+        ipsam cum. Ducimus quas ratione accusantium impedit nam. Sit perspiciatis mollitia velit rem pariatur quam porro
+        nihil, est, ex dolore reprehenderit fugit officia adipisci a alias vitae consequuntur. Cupiditate maxime sit,
+        quod numquam sint corrupti. Odit optio fugiat ea ipsum, commodi sunt animi soluta quidem illum quam provident
+        laudantium recusandae laborum eius ut nisi aliquam magni eos fuga blanditiis itaque ipsa quae? Perferendis,
+        totam tenetur corrupti similique eaque ipsam ab dolor quibusdam placeat deserunt ipsum magnam quod laboriosam
+        reiciendis vero consequuntur! Blanditiis ea soluta molestiae quasi aperiam et nihil sint quia magni ut illum,
+        aliquid saepe consequatur alias iste amet iusto. Cupiditate saepe pariatur et vel autem distinctio assumenda
+        modi id minus, perferendis soluta laboriosam dolores exercitationem impedit iure necessitatibus fuga molestias
+        quibusdam? Facilis laborum similique nesciunt quod modi saepe, eligendi pariatur nostrum quam nihil deserunt, id
+        quasi vel nisi, dolorem omnis sunt! Sunt inventore corporis repellendus doloribus illum! Velit natus atque,
+        dolorum repellendus voluptatibus temporibus vel laudantium at facere quas mollitia dolorem nostrum ab. Quaerat
+        quis nihil recusandae provident eius debitis nobis inventore rerum. Impedit, aspernatur repudiandae? Dicta,
+        exercitationem. Omnis harum, inventore, cumque ullam blanditiis unde nemo ex ut consequuntur dolorem repellendus
+        saepe, ab at. Temporibus et perspiciatis debitis quam voluptatum nesciunt, veniam maxime iusto magni architecto
+        beatae quos minus, iste porro sed odit laboriosam tempora consectetur repudiandae ratione molestiae. Libero ut
+        dolorum soluta quod. Soluta aut inventore accusamus delectus ullam recusandae voluptatum distinctio ex
+        voluptatem praesentium, unde hic blanditiis officia repellendus deleniti at itaque ipsa ratione nesciunt alias
+        iusto vel consequatur necessitatibus sunt. Fugiat ut facere eaque vel culpa reiciendis. Modi, dolores quis!
+        Obcaecati animi tempora mollitia pariatur consectetur. Impedit, vitae omnis cum fugiat dolore eos, aliquid
+        deserunt ut consequatur reiciendis delectus. Ipsa officiis tempore blanditiis ad, dolore repudiandae saepe nulla
+        veritatis expedita corrupti placeat totam facere consectetur temporibus vitae enim nostrum porro nobis mollitia
+        omnis hic eligendi? Placeat quidem sunt, eos non modi enim earum neque minima beatae ex quae possimus excepturi
+        nisi omnis aut provident cumque doloribus exercitationem atque nobis perspiciatis similique. Quis eos sapiente
+        voluptas nisi eum magnam ratione non quae dolor, iste, pariatur delectus ipsa earum rerum fuga? Cumque odit illo
+        inventore fugit, ipsa molestiae perferendis in quos autem molestias, consequatur commodi aperiam quod provident
+        officia a voluptatum at debitis porro ullam deserunt aliquam! Doloribus similique suscipit harum consectetur
+        blanditiis repudiandae, sapiente quasi earum culpa nemo sunt enim. Quod totam perferendis, vitae minima eum
+        minus autem saepe esse magnam ducimus laborum pariatur. Quia quas aliquid deleniti possimus veritatis vitae et
+        cupiditate. Magni esse dolore, ipsum nesciunt distinctio error repellat impedit autem debitis officiis!
+        Dignissimos, officia quae excepturi consectetur commodi eum architecto laboriosam quibusdam blanditiis quidem, a
+        voluptates ex dicta ipsum placeat ea autem obcaecati! Iusto repellat placeat error ex. Quisquam necessitatibus
+        itaque at dolores commodi nam. Alias minus numquam aliquam, tempora totam sed. Qui illum accusamus quam velit
+        veritatis autem doloremque molestiae earum, quis fugiat, ullam, harum saepe ducimus consectetur cupiditate ad
+        maxime rerum? Architecto ipsum vero temporibus esse blanditiis, sit explicabo incidunt deserunt nobis unde
+        assumenda vel voluptatibus quia. Ab itaque voluptates pariatur voluptatum repudiandae reprehenderit accusantium
+        rem beatae possimus sed ipsam cum ducimus cumque, deserunt iusto est! Ut, iste cumque, sed eaque neque
+        praesentium hic possimus nostrum tempore beatae, unde amet odit itaque laudantium numquam labore perferendis
+        magni tenetur rerum quos maxime? Molestiae sunt, fugiat tenetur illum exercitationem ad tempore accusamus atque
+        dolorem totam, eveniet dignissimos voluptate velit in qui, suscipit itaque aspernatur? Facilis provident
+        pariatur, doloribus cupiditate sit, dolore maxime earum sunt cum hic accusamus ea quos. Quas aliquid recusandae
+        nemo doloremque? Perspiciatis aspernatur inventore, dolor beatae ad voluptatibus deserunt a optio! Porro ut esse
+        praesentium quae, aut optio eligendi suscipit? Impedit, distinctio adipisci. Excepturi dolore repudiandae unde
+        eum numquam, quaerat incidunt vero voluptas necessitatibus. Velit alias neque iure culpa dolores, voluptatem
+        blanditiis veniam suscipit voluptas facilis. Illo, aperiam asperiores minus dolorem placeat pariatur
+        consequuntur cumque qui iusto et in cupiditate expedita? Tempora velit non perspiciatis voluptas ipsa similique
+        provident sint saepe enim commodi rerum aliquam ullam possimus deserunt aut tempore ipsum eaque consequuntur
+        nesciunt, facere nisi? Soluta placeat accusantium atque alias eaque error minima veritatis explicabo quaerat
+        culpa voluptatem odio voluptates perferendis vel, asperiores inventore ullam temporibus beatae velit!
+        Consequuntur velit inventore quia eveniet modi, placeat ab repellat dolorem, minus eum molestiae impedit
+        exercitationem aliquam laborum maiores doloribus. Distinctio laudantium hic necessitatibus quos assumenda saepe
+        accusamus, vel ab molestiae voluptate illum facilis repudiandae eaque cum quidem tenetur voluptatibus corporis
+        nihil odit rerum maxime reprehenderit? Veritatis eos officia, temporibus, nostrum eaque ea sequi qui in velit
+        deleniti provident ullam suscipit maiores adipisci fugiat autem nihil perspiciatis alias odio ipsum libero
+        deserunt! Ea blanditiis, ullam itaque delectus commodi exercitationem nisi consequatur neque maiores
+        voluptatibus modi dolorem similique tempore placeat dignissimos soluta aut amet, vero laudantium omnis natus!
+        Modi, amet. Pariatur, blanditiis dolores fuga est fugit tempora! Sit iusto quo, exercitationem delectus
+        consectetur magni aliquid, repudiandae impedit voluptas accusamus et repellendus optio dolore debitis blanditiis
+        earum eius fuga minus velit dicta enim eveniet vitae officiis explicabo. Amet sapiente incidunt esse rem quod
+        quae ad commodi sit odit, laboriosam temporibus ipsum provident, deserunt qui reprehenderit? Dolorum, quasi
+        aliquid porro libero dolorem architecto, autem totam iure nesciunt fugit quos minima voluptate atque voluptas
+        molestias enim cumque reprehenderit ducimus dicta delectus amet culpa quo voluptatem. Illum sapiente nemo
+        inventore exercitationem delectus iusto nam esse hic eos voluptatum similique necessitatibus fuga ex ullam eum,
+        architecto quam mollitia blanditiis temporibus praesentium cum! Sunt, adipisci deleniti. Iste, cum veniam. Amet
+        ullam cupiditate illo officiis. Officiis doloremque ducimus nobis. Illo in, expedita fugiat et distinctio ipsum
+        voluptatum, doloremque ullam sint earum eos reprehenderit quod! Temporibus accusantium reprehenderit modi, amet
+        eligendi est nemo? Soluta molestiae dolor itaque nulla, officiis animi officia eum fugit expedita? Totam quidem
+        sint nihil fuga unde libero odio culpa, veniam rem.</div>
+</body>
+
+</html>
+
